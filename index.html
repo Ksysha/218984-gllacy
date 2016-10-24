@@ -31,9 +31,7 @@
           <li>
             <a class="login" href="#">Вход</a>
             <div class="popup">
-              <form class="sign-in" method="get" action="#">
-                <label for="user-email"></label>
-                <label for="user-password"></label>
+              <form class="sign-in" method="post" action="#">
                 <input type="email" name="user-email" value="Электронная почта">
                 <input type="password" name="user-password" value="Пароль">
                 <button type="submit">Войти</button>
@@ -132,6 +130,16 @@
           <b>8 812 450-25-25</b>
           (с 10 до 20 ежедневно)
           <a href="#" class="btn">Форма обратной связи</a>
+          <div class="popup">
+            <b>Мы обязательно вам ответим!</b>
+            <a href="#" class="exit">Закрыть</a>
+            <form>
+              <input type="text" name="feedback-name" value="Как вас зовут?">
+              <input type="email" name="feedback-email" value="Ваша почта для ответа?">
+              <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
+              <button type="sumbit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
