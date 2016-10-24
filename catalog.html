@@ -11,8 +11,8 @@
       </a>
       <nav class="main-navigation">
         <ul>
-          <li>
-            <a class="active" href="#">Каталог</a>
+          <li class="active">
+            <a href="#">Каталог</a>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -23,16 +23,56 @@
         </ul>
       </nav>
       <div class="user-block">
-        <form class="search" method="get" action="#">
-          <input type="text" name="search" value="Что ищем?">
-          <button type="submit" class="btn-search"></button>
-        </form>
-        <a class="login" href="#">Вход</a>
-        <a class="basket active" href="#">2 товаров</a>
+        <ul>
+          <li>
+            <a href="#">Поиск</a>
+            <div class="popup">
+              <input type="text" name="search" value="Что ищем?">
+            </div>
+          </li>
+          <li>
+            <a class="login" href="#">Вход</a>
+            <div class="popup">
+              <form class="sign-in" method="get" action="#">
+                <label for="user-email"></label>
+                <label for="user-password"></label>
+                <input type="email" name="user-email" value="Электронная почта">
+                <input type="password" name="user-password" value="Пароль">
+                <button type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </div>
+          </li>
+          <li>
+            <a class="basket active" href="#">2 товаров</a>
+            <div class="popup">
+              <table border="1">
+                <tr>
+                  <td class="delete">Удалить</td>
+                  <td class="preview-itiem">Фото товара</td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг x 200 руб</td>
+                  <td>300 руб</td>
+                </tr>
+                <tr>
+                  <td class="delete">Удалить</td>
+                  <td class="preview-itiem">Фото товара</td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг x 300 руб</td>
+                  <td>400 руб</td>
+                </tr>
+              </table>
+              <hr>
+              <b>Итого: 750 руб.</b>
+              <a href="#" class="btn">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
         <section class="header-contacts">
-          с 10 до 20 ежедневно<br>
-          8 (812) 450-25-25
-      </section>
+          <p>с 10 до 20 ежедневно</p>
+          <a href="tel:88124502525">8 (812) 450-25-25</a>
+        </section>
       </div>
     </header>
     <main>
@@ -45,20 +85,20 @@
             <a href="#">Каталог</a>
           </li>
           <li>
-            Сливочное
+            <a>Сливочное</a>
           </li>
         </ul>
-        <h2>Сливочное мороженое</h2>
+        <h1>Сливочное мороженое</h1>
       </div>
       <form class="filters" action="#" method="post">
         <dl class="filter-wrap">
           <dt>Сортировка</dt>
           <dd>
             <select size="1" name="order">
-              <option>По популярности</option>
-              <option>Сначала недорогие</option>
-              <option>Сначала дорогие</option>
-              <option>По жирности</option>
+              <option value="popular">По популярности</option>
+              <option value="priseAsc">Сначала недорогие</option>
+              <option value="priceDesc">Сначала дорогие</option>
+              <option value="Fatness">По жирности</option>
             </select>
           </dd>
           <dt>Цена 100 руб. - 500 руб.</dt>
@@ -106,114 +146,108 @@
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">310 &#8381; /кг</span>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">380 &#8381; /кг</span>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <h3>Сливочно-кофейное с кусочками шоколада</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">355 &#8381; /кг</span>
-          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">415 &#8381; /кг</span>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">325 &#8381; /кг</span>
-          <a href="#">Сливочное с брусничным джемом</a>
+          <h3>Сливочное с брусничным джемом</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">410 &#8381; /кг</span>
-          <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <h3>Сливочно-черничное с цельными ягодами черники</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">375 &#8381; /кг</span>
-          <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <h3>Сливочно-лимонное с карамельной присыпкой</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">320 &#8381; /кг</span>
-          <a href="#">Сливочное с шоколадной стружкой</a>
+          <h3>Сливочное с шоколадной стружкой</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">440 &#8381; /кг</span>
-          <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <h3>Сливочно-ванильное с кусочками шоколада</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">435 &#8381; /кг</span>
-          <a href="#">Сливочное с ментоловым сиропом</a>
+          <h3>Сливочное с ментоловым сиропом</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">355 &#8381; /кг</span>
-          <a href="#">Сливочное с кусочками черного шоколада</a>
+          <h3>Сливочное с кусочками черного шоколада</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img width="267" height="280" src="http://placehold.it/267x280">
           <span class="price">420 &#8381; /кг</span>
-          <a href="#">Сливочное с мятным сиропом</a>
+          <h3>Сливочное с мятным сиропом</h3>
           <a href="#" class="btn">Быстрый просмотр</a>
         </article>
         <div class="pages">
-          <div class="page-prev"></div>
           <ul class="n-page">
             <li>
-              <a class="btn btn-page-active" href="#">
-                <span class="btn-text">1</span>
-              </a>
+              <a href="#" class="page-prev"></a>
             </li>
             <li>
-              <a class="btn btn-page">
-                <span class="btn-text">2</span>
-              </a>
+              <a class="btn btn-page-active" href="#">1</a>
             </li>
             <li>
-              <a class="btn btn-page" href="#">
-                <span class="btn-text">3</span>
-              </a>
+              <a class="btn btn-page">2</a>
             </li>
             <li>
-              <a class="btn btn-page" href="#">
-                <span class="btn-text">4</span>
-              </a>
+              <a class="btn btn-page" href="#">3</a>
             </li>
             <li>
-              <a class="btn btn-page" href="#">
-                <span class="btn-text">4</span>
-              </a>
+              <a class="btn btn-page" href="#">4</a>
+            </li>
+            <li>
+              <a class="btn btn-page" href="#">4</a>
+            </li>
+            <li>
+              <a href="#" class="page-next"></a>
             </li>
           </ul>
-          <div class="page-next"></div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <section class="footer-social">
-        <a class="social-btn social-btn-twitter" href="#"></a>
-        <a class="social-btn social-btn-inst" href="#"></a>
-        <a class="social-btn social-btn-fb" href="#"></a>
-        <a class="social-btn social-btn-vk" href="#"></a>
+        <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+        <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </section>
       <section class="footer-documents">
         <a href="#" class="btn">Для поставщиков</a>
