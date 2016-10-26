@@ -11,6 +11,13 @@
         <ul>
           <li>
             <a href="#">Каталог</a>
+            <ul>
+              <li class="new-product">Новинки</li><hr>
+              <li><a href="#s1">Сливочное</a></li>
+              <li><a href="#s3">Щербеты</a>
+              <li><a href="#s2">Фруктовый лед</a></li>
+              <li><a href="#s3">Мелорин</a>
+            </ul>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -54,7 +61,7 @@
       <h1>Крем-брюле и пломбир с малиновым джемом</h1>
       <a href="#" class="btn">Давайте оба!</a>
       <div class="navigations">
-        <input type="radio" name="slide" value="1" class="active" checked>
+        <input type="radio" name="slide" value="1" checked>
         <input type="radio" name="slide" value="2">
         <input type="radio" name="slide" value="3">
       </div>
@@ -72,22 +79,22 @@
       </section>
       <section class="hits">
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280">
+          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
           <p class="price">310 &#8381; /кг</p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280">
+          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
           <p class="price">380 &#8381; /кг</p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280">
+          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
           <p class="price">355 &#8381; /кг</p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280">
+          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
           <p class="price">415 &#8381; /кг</p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </article>
@@ -116,12 +123,12 @@
         </div>
         <form action="#" method="post" class="subscriptions">
           <label for="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</label><br>
-          <input type="email" name="subscription" placeholder="Электронная почта">
+          <input type="email" name="subscription" id="subscription placeholder="Электронная почта">
           <button type="submit">Отправить</button>
         </form>
       </div>
       <div class="index-content">
-        <img width="1200" height="430" src="http://placehold.it/1200x430">
+        <img width="1200" height="430" src="http://placehold.it/1200x430" alt="Карта">
         <section class="contacts">
           Адрес главного офиса и<br>
           офлайн магазина:<br>
@@ -130,16 +137,6 @@
           <b>8 812 450-25-25</b>
           (с 10 до 20 ежедневно)
           <a href="#" class="btn">Форма обратной связи</a>
-          <div class="popup">
-            <b>Мы обязательно вам ответим!</b>
-            <a href="#" class="exit">Закрыть</a>
-            <form>
-              <input type="text" name="feedback-name" value="Как вас зовут?">
-              <input type="email" name="feedback-email" value="Ваша почта для ответа?">
-              <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
-              <button type="sumbit">Отправить</button>
-            </form>
-          </div>
         </section>
       </div>
     </main>
@@ -162,5 +159,15 @@
         &#169; 2016
       </section>
     </footer>
+    <div class="popup-feedback">
+            <b>Мы обязательно вам ответим!</b>
+            <a href="#" class="exit">Закрыть</a>
+            <form action="#" method="get">
+              <input type="text" name="feedback-name" value="Как вас зовут?">
+              <input type="email" name="feedback-email" value="Ваша почта для ответа?">
+              <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
   </body>
 </html>
