@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
     <header class="main-header">
-      <img class="header-logo" width="200" height="75" src="http://placehold.it/200x75" alt="Glassy Shop">
+      <img class="header-logo" width="153.094" height="63.25" src="img/logo-gllacy.svg" alt="Glassy Shop">
       <nav class="main-navigation">
         <ul>
           <li>
@@ -32,15 +33,15 @@
           <li>
             <a href="#">Поиск</a>
             <div class="popup">
-              <input type="text" name="search" value="Что ищем?">
+              <input type="text" name="search" placeholder="Что ищем?">
             </div>
           </li>
           <li>
             <a class="login" href="#">Вход</a>
             <div class="popup">
               <form class="sign-in" method="post" action="#">
-                <input type="email" name="user-email" value="Электронная почта">
-                <input type="password" name="user-password" value="Пароль">
+                <input type="email" name="user-email" placeholder="Электронная почта">
+                <input type="password" name="user-password" placeholder="Пароль">
                 <button type="submit">Войти</button>
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -79,22 +80,22 @@
       </section>
       <section class="hits">
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
+          <img width="267" height="280" src="img/ice-cream-1.png" alt="фото товара">
           <p class="price">310 &#8381; /кг</p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
+          <img width="267" height="280" src="img/ice-cream-2.png" alt="фото товара">
           <p class="price">380 &#8381; /кг</p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
+          <img width="267" height="280" src="img/ice-cream-3.png" alt="фото товара">
           <p class="price">355 &#8381; /кг</p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </article>
         <article class="hit">
-          <img width="267" height="280" src="http://placehold.it/267x280" alt="фото товара">
+          <img width="267" height="280" src="img/ice-cream-4.png" alt="фото товара">
           <p class="price">415 &#8381; /кг</p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </article>
@@ -123,12 +124,12 @@
         </div>
         <form action="#" method="post" class="subscriptions">
           <label for="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</label><br>
-          <input type="email" name="subscription" id="subscription placeholder="Электронная почта">
+          <input type="email" name="subscription" id="subscription" placeholder="Электронная почта">
           <button type="submit">Отправить</button>
         </form>
       </div>
       <div class="index-content">
-        <img width="1200" height="430" src="http://placehold.it/1200x430" alt="Карта">
+        <img width="1200" height="430" src="img/map.jpg">
         <section class="contacts">
           Адрес главного офиса и<br>
           офлайн магазина:<br>
@@ -154,17 +155,19 @@
         <a href="#" class="btn">Экологические стандарты</a>
       </section>
       <section class="footer-copyright">
+        <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
         Сделано в:
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         &#169; 2016
       </section>
     </footer>
     <div class="popup-feedback">
-            <b>Мы обязательно вам ответим!</b>
-            <a href="#" class="exit">Закрыть</a>
+
             <form action="#" method="get">
-              <input type="text" name="feedback-name" value="Как вас зовут?">
-              <input type="email" name="feedback-email" value="Ваша почта для ответа?">
+              <b>Мы обязательно вам ответим!</b>
+              <a href="#" class="exit">Закрыть</a>
+              <input type="text" name="feedback-name" placeholder="Как вас зовут?">
+              <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
               <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
               <button type="submit">Отправить</button>
             </form>
