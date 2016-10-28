@@ -1,4 +1,5 @@
 body {
+  margin: 0px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -13,4 +14,62 @@ h2 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
+}
+.wrapper {
+  background: #849d8f;
+}
+.center {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: auto;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1146px;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  width: 600px;
+}
+.nav-list li {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.user-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 267px;
+  margin-bottom: 20px;
+}
+.sub-nav-list {
+  display: none;
+}
+.main-menu{
+  display: flex;
+  margin-top: 10px;
+}
+.popup {
+  display: none;
+}
+.user-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.header-contacts {
+  text-align: right;
+}
+.header-contacts p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.header-contacts a {
+  margin: 0px;
 }
