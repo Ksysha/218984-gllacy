@@ -10,6 +10,7 @@ h1 {
   font-weight: bold;
   padding-bottom: 40px;
   margin: 0;
+  color: white;
 }
 h2 {
   font-size: 35px;
@@ -291,4 +292,100 @@ h3 {
 .footer-documents {
   width: 350px;    /* тут честно костыльное решение (была мысль сделать два ul)*/
 }
-/**/
+/* хлебные крошки */
+.breadcrumbs {
+  margin-top: -44px
+}
+.breadcrumbs h1 {
+  font-size: 35px;
+  line-height: 41px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs a {
+  color: white;
+}
+.breadcrumbs li::before {
+  content: '»';
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+ }
+ .breadcrumbs li:first-child::before {
+  content: '';
+ }
+/* фильтры */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #a8b9af;
+  height: 36px;
+  border-radius: 18px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+}
+.field {
+  margin: 0;
+  margin-top: 17px;
+}
+.filters {
+  display: flex;
+  width: 853px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.filters p {
+  margin: 0;
+  margin-bottom: 9px;
+}
+.filters button[type=submit] {
+  width: 144px;
+  height: 36px;
+  border: 2px solid #f6f8f7;
+  border-radius: 15px;
+  background: #a8b9af;
+}
+/* каталог */
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.catalog-item {
+  flex: 1;
+  text-align: center;
+}
+/* переключалка станиц */
+.n-page {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-top: 107px;
+}
+.n-page li:first-child::before {
+  content: '<';
+}
+.n-page li:last-child::after {
+  content: '>';
+}
+.n-page li {
+  padding-right: 24px;
+}
+.n-page li:last-child {
+  padding: 0;
+}
