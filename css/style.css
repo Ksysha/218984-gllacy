@@ -1,5 +1,4 @@
 body {
-  margin: 0px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -9,67 +8,287 @@ h1 {
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
+  padding-bottom: 40px;
+  margin: 0;
 }
 h2 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
+  color: white;
+  margin: 0;
+  margin-bottom: 28px;
+}
+h3 {
+  margin: 0;
+  color: #323232;
+  margin-bottom: 10px;
 }
 .wrapper {
   background: #849d8f;
 }
-.center {
+.main-page {
   max-width: 1200px;
   min-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
+.center {
+  margin-left: 27px;
+  margin-right: 27px;
+}
+/* шапка */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1146px;
-  margin-left: 27px;
-  margin-right: 27px;
+  padding-top: 10px;
 }
 .nav-list {
+  padding: 0;
   display: flex;
   list-style-type: none;
-  width: 600px;
 }
 .nav-list li {
   padding-right: 15px;
   padding-left: 15px;
 }
+.nav-list li a{
+  text-decoration: none;
+  color: white;
+}
 .user-list {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  width: 267px;
   margin-bottom: 20px;
+}
+.user-list li {
+  padding-left: 10px;
+}
+.user-list li a {
+  text-decoration: none;
+  color: white;
 }
 .sub-nav-list {
   display: none;
 }
 .main-menu{
   display: flex;
-  margin-top: 10px;
+  z-index: 1;
 }
-.popup {
+.popup, .popup-feedback {
   display: none;
-}
-.user-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 10px;
 }
 .header-contacts {
   text-align: right;
 }
 .header-contacts p {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
 }
 .header-contacts a {
-  margin: 0px;
+  margin: 0;
 }
+/* переключалка фона*/
+.invitation {
+  margin: auto;
+  margin-top: -122px;
+  width: 1045px;
+  height: 881px;
+  text-align: center;
+  position: relative;
+}
+/* предполагается что классы будут устанавливаться с помощью js (могу сделать позже) - там же и текст в h1 будет меняться*/
+.invitation.first {
+  background-image: url(../img/index-background1.png);
+}
+.invitation.second {
+  background-image: url(../img/index-background2.png);
+}
+.invitation.third {
+  background-image: url(../img/index-background3.png);
+}
+.invitation-body {
+  position: absolute;
+  top: 400px;
+}
+.invitation a.btn {
+  width: 282px;
+  height: 67px;
+  border-radius: 30px;
+}
+.btn {
+  display: inline-block;
+  background: #eb553a;
+  text-decoration: none;
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+.switch-background {
+  position: absolute;
+  top: 575px;
+  left: -50px;   /* ужасное решение (если сыжать экран, то переключалка падает за левый край и скролится)*/
+}
+/* баннеры с описание*/
+.banners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -230px;
+  margin-bottom: 40px;
+}
+.banner {
+  z-index: 1;
+  width: 560px;
+  height: 229px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 23px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-1 {
+  background-image: url(../img/raspberry-background.png);
+}
+.banner-2 {
+  background-image: url(../img/chocolate-background.png);
+}
+.banner p {
+  font-size: 18px;
+  color: white;
+}
+.banner a.btn {
+  width: 167px;
+  height: 49px;
+  position: absolute;
+  right: 20px;
+  bottom: 23px;
+  border-radius: 19px;
+}
+/* хиты */
+.hits {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.hit {
+  flex: 1;
+  text-align: center;
+}
+.hit a {
+  color: #ffffff;
+}
+.price {
+  line-height: 45px;
+  font-size: 45px;
+  color: white;
+  margin: 0;
+  margin-top: -60px;
+  margin-bottom: 20px;
+}
+/* преимущества */
+.features {
+  background-image: url(../img/wafer.jpg);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+.features b {
+  font-size: 24px;
+  line-height: 30px;
+}
+.features-list {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.feature-item {
+  width: 510px; /* пока что, потом когда добавим иконки поменяется*/
+}
+/* новости и подписка*/
+.index-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.news {
+  width: 560px;
+  height: 220px;
+  background-image: url(../img/strawberry-background.png);
+  box-sizing: border-box;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+.news a {
+  display: inline-block;
+  width: 300px;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+.subscriptions {
+  width: 560px;
+  height: 220px;
+  background-image: url(../img/mail-border-background.png);
+  box-sizing: border-box;
+  padding: 6px;
+}
+.subscriptions form {
+  background: #f8f7f4;
+  border-radius: 10px;
+  padding-top: 33px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 36px;
+  color: #5a5a5a;
+}
+.subscriptions form label {
+  display: inline-block;
+  margin-bottom: 27px;
+}
+.subscriptions button[type=submit] {
+  width: 131px;
+  height: 47px;
+  border-radius: 21px;
+  border: none;
+}
+/* карта и котакты*/
+.map {
+  margin-left: -27px;
+}
+.contacts {
+  position: absolute;
+  top: 62px;
+  left: 850px;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.map-contacts {
+  position: relative;
+}
+.contacts p {
+  margin: 0;
+}
+.contacts a.btn {
+  width: 254px;
+  height: 47px;
+  border-radius: 27px;
+}
+/* футер */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-documents {
+  width: 350px;    /* тут честно костыльное решение (была мысль сделать два ul)*/
+}
+/**/
