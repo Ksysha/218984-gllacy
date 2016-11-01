@@ -25,6 +25,9 @@ h3 {
   color: #323232;
   margin-bottom: 10px;
 }
+.wrapper {
+  background: #849d8f;
+}
 #background-1:checked ~ div {
   background: #849d8f;
   background-image: url(../img/index-background1.png);
@@ -330,13 +333,10 @@ input[type=radio] {
   padding: 0;
 }
 /* хлебные крошки */
-.breadcrumbs {
-  margin-top: -44px
-}
 .breadcrumbs h1 {
   font-size: 35px;
   line-height: 41px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding: 0;
 }
 .breadcrumbs ul {
@@ -366,7 +366,6 @@ fieldset {
   margin: 0;
   padding: 0;
   background: #a8b9af;
-  height: 36px;
   border-radius: 18px;
   padding-left: 16px;
   padding-top: 8px;
@@ -377,9 +376,15 @@ fieldset {
   margin: 0;
   margin-top: 17px;
 }
+.toppings label {
+  padding-right: 2%;
+}
+.toppings input[type=checkbox] {
+  margin-right: 1%;
+}
 .filters {
   display: flex;
-  width: 853px;
+  width: 900px;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
@@ -389,12 +394,13 @@ fieldset {
   margin: 0;
   margin-bottom: 9px;
 }
-.filters button[type=submit] {
+.filters button {
   width: 144px;
-  height: 36px;
   border: 2px solid #f6f8f7;
   border-radius: 15px;
   background: #a8b9af;
+  padding-top: 11px;
+  padding-bottom: 5px;d
 }
 /* каталог */
 .catalog {
@@ -403,7 +409,7 @@ fieldset {
   justify-content: space-between;
 }
 .catalog-item {
-  flex: 1;
+  flex: 23.3%;
   text-align: center;
 }
 /* переключалка станиц */
