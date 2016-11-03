@@ -7,9 +7,9 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <input type="radio" name="slide" value="background-1" id="background-1" checked>
-    <input type="radio" name="slide" value="background-2" id="background-2">
-    <input type="radio" name="slide" value="background-3" id="background-3">
+    <input type="radio" class="slide-radio" name="slide" value="background-1" id="background-1" checked>
+    <input type="radio" class="slide-radio" name="slide" value="background-2" id="background-2">
+    <input type="radio" class="slide-radio" name="slide" value="background-3" id="background-3">
     <div class="wrapper">
       <div class="main-page">
         <header class="main-header">
@@ -79,12 +79,12 @@
             </ul>
           </section>
           <section class="banners">
-            <div class="banner banner-1">
+            <div class="banner raspberries-free">
               <h2>Малинка даром!</h2>
               <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a href="#" class="btn">Хочу варенье!</a>
             </div>
-            <div class="banner banner-2">
+            <div class="banner chocolate-free">
               <h2>Шоколадки даром!</h2>
               <p>При покупке 2кг любого пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
               </p>
@@ -144,7 +144,9 @@
             </div>
           </div>
           <div class="map-contacts">
-            <img width="1200" height="430" src="img/map.jpg" class="map">
+            <div class="map">
+              <img width="1200" height="430" src="img/map.jpg">
+            </div>
             <section class="contacts">
               <p>Адрес главного офиса и<br>
               офлайн магазина:</p>

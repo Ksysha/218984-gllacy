@@ -93,20 +93,18 @@
           </div>
         </header>
         <main>
-          <div class="breadcrumbs">
-            <ul>
-              <li>
-                <a href="index.html">Главная</a>
-              </li>
-              <li>
-                <a href="#">Каталог</a>
-              </li>
-              <li>
-                <a>Сливочное</a>
-              </li>
-            </ul>
-            <h1>Сливочное мороженое</h1>
-          </div>
+          <ul class="breadcrumbs">
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a>Сливочное</a>
+            </li>
+          </ul>
+          <h1>Сливочное мороженое</h1>
           <form class="filters" action="#" method="post">
             <div class="field">
               <p>Сортировка</p>
@@ -130,16 +128,16 @@
               <p>Жирность:</p>
               <fieldset class="fat">
                 <label>
-                  <input type="radio" name="fatness" value="0">0%
+                  <input type="radio" name="fatness" class="fatness" value="0">0%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" value="10" checked>до 10%
+                  <input type="radio" name="fatness" class="fatness" value="10" checked>до 10%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" value="30">до 30%
+                  <input type="radio" name="fatness" class="fatness" value="30">до 30%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" value="more30">выше 30%
+                  <input type="radio" name="fatness" class="fatness" value="more30">выше 30%
                 </label>
               </fieldset>
             </div>
@@ -239,32 +237,29 @@
               <a href="#" class="btn">Быстрый просмотр</a>
             </article>
           </section>
-          <div class="pages">
-            <ul class="n-page">
-              <li>
-                <a href="#" class="page-prev"></a>
-              </li>
-              <li>
-                <a class="btn-page-active" href="#">1</a>
-              </li>
-              <li>
-                <a class="btn-page">2</a>
-              </li>
-              <li>
-                <a class="btn-page" href="#">3</a>
-              </li>
-              <li>
-                <a class="btn-page" href="#">4</a>
-              </li>
-              <li>
-                <a class="btn-page" href="#">5</a>
-              </li>
-              <li>
-                <a href="#" class="page-next"></a>
-              </li>
-            </ul>
-          </div>
-          <hr>
+          <ul class="n-page">
+            <li>
+              <a href="#" class="page-prev"><</a>
+            </li>
+            <li>
+              <a class="btn-page-active" href="#">1</a>
+            </li>
+            <li>
+              <a class="btn-page">2</a>
+            </li>
+            <li>
+              <a class="btn-page" href="#">3</a>
+            </li>
+            <li>
+              <a class="btn-page" href="#">4</a>
+            </li>
+            <li>
+              <a class="btn-page" href="#">5</a>
+            </li>
+            <li>
+              <a href="#" class="page-next">></a>
+            </li>
+          </ul>
         </main>
         <footer class="main-footer">
           <section >
