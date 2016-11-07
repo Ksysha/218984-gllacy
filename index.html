@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -20,8 +21,8 @@
                 <li>
                   <a href="#">Каталог</a>
                   <ul class="sub-nav-list">
-                    <li class="new-product">Новинки</li><hr>
-                    <li><a href="#s1">Сливочное</a></li>
+                    <li><a href="#s">Новинки</a></li>
+                    <li><a href="catalog.html">Сливочное</a></li>
                     <li><a href="#s3">Щербеты</a></li>
                     <li><a href="#s2">Фруктовый лед</a></li>
                     <li><a href="#s3">Мелорин</a></li>
@@ -38,26 +39,58 @@
           </div>
           <div class="user-block">
             <ul class="user-list">
-              <li>
-                <a href="#">Поиск</a>
+              <li class="search">
+                <a href="#"></a>
                 <div class="popup">
                   <input type="text" name="search" placeholder="Что ищем?">
                 </div>
               </li>
-              <li>
-                <a class="login" href="#">Вход</a>
-                <div class="popup">
+              <li class="login">
+                <a href="#">Вход</a>
+                <div class="popup-login">
                   <form class="sign-in" method="post" action="#">
                     <input type="email" name="user-email" placeholder="Электронная почта">
                     <input type="password" name="user-password" placeholder="Пароль">
-                    <button type="submit">Войти</button>
+                    <button class="btn" type="submit">Войти</button>
+                  </form>
+                  <div class="authorize-links">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
-                  </form>
+                  </div>
                 </div>
               </li>
-              <li>
-                <a class="basket active" href="#">Пусто</a>
+              <li class="basket full-basket">
+                <a href="#">2 товаров</a>
+                <div class="popup-basket">
+                  <table class="product-list">
+                    <tr class="product-item">
+                      <td class="delete-product">
+                        <button type="button">Удалить</button>
+                      </td>
+                      <td class="preview-item">
+                        <img src="img/preview-item-1.png" alt="фото товара">
+                      </td>
+                      <td class="name-product">Пломбир с апельсиновым джемом</td>
+                      <td class="price-product">1,5 кг x <span>200 руб</span></td>
+                      <td class="cost">300 руб</td>
+                    </tr>
+                    <tr class="product-item">
+                      <td class="delete-product">
+                        <button type="button">Удалить</button>
+                      </td>
+                      <td class="preview-item">
+                        <img src="img/preview-item-2.png" alt="фото товара">
+                      </td>
+                      <td class="name-product">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="price-product">1,5 кг x <span>300 руб</span></td>
+                      <td class="cost">400 руб</td>
+                    </tr>
+                  </table>
+                  <div class="total-buy">
+                    <b>Итого: 750 руб.</b>
+                    <a href="#" class="btn">Оформить заказ</a>
+                  </div>
+                </div>
               </li>
             </ul>
             <section class="header-contacts">
@@ -73,20 +106,20 @@
               <a href="#" class="btn">Давайте оба!</a>
             </div>
             <ul>
-              <li><label for="background-1">1</label></li>
-              <li><label for="background-2">2</label></li>
-              <li><label for="background-3">3</label></li>
+              <li><label class="current" for="background-1"></label></li>
+              <li><label for="background-2"></label></li>
+              <li><label for="background-3"></label></li>
             </ul>
           </section>
           <section class="banners">
             <div class="banner raspberries-free">
               <h2>Малинка даром!</h2>
-              <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a href="#" class="btn">Хочу варенье!</a>
             </div>
             <div class="banner chocolate-free">
               <h2>Шоколадки даром!</h2>
-              <p>При покупке 2кг любого пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+              <p>При покупке 2 кг любого пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
               </p>
               <a href="#" class="btn">Хочу шоколадки!</a>
             </div>
