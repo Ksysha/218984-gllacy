@@ -792,8 +792,57 @@ h3 {
   display: flex;
   padding: 0;
 }
-.footer-social li {
-  padding-right: 5px;
+.social-btn {
+  width: 31px;
+  height: 31px;
+  position: relative;
+  box-shadow: 0px 0px 0px 4px white;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.social-btn-twitter::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-position: -59px -135px;
+}
+.social-btn-inst::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-position: -181px -76px;
+}
+.social-btn-fb::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-position: -36px -5px;
+}
+.social-btn-vk::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-position: -181px -118px;
 }
 .footer-documents {
   list-style-type: none;
