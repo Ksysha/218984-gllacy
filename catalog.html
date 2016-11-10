@@ -39,7 +39,10 @@
               <li class="search">
                 <a href="#"></a>
                 <div class="popup">
-                  <input type="text" name="search" placeholder="Что ищем?">
+                  <form method="post" action="#">
+                    <input type="text" name="search" placeholder="Что ищем?">
+                    <button type="submit">Найти</button>
+                  </form>
                 </div>
               </li>
               <li class="login">
@@ -48,12 +51,16 @@
                   <form class="sign-in" method="post" action="#">
                     <input type="email" name="user-email" placeholder="Электронная почта">
                     <input type="password" name="user-password" placeholder="Пароль">
-                    <button class="btn" type="submit">Войти</button>
+                    <div class="login-and-authorizes">
+                      <button class="btn" type="submit">Войти</button>
+                      <div class="authorize-links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
+                    </div>
+
                   </form>
-                  <div class="authorize-links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
+
                 </div>
               </li>
               <li class="basket full-basket">

@@ -42,21 +42,28 @@
               <li class="search">
                 <a href="#"></a>
                 <div class="popup">
-                  <input type="text" name="search" placeholder="Что ищем?">
+                  <form method="post" action="#">
+                    <input type="text" name="search" placeholder="Что ищем?">
+                    <button type="submit">Найти</button>
+                  </form>
                 </div>
               </li>
               <li class="login">
-                <a href="#">Вход</a>
+                <a href="https://www.google.ru/maps">Вход</a>
                 <div class="popup-login">
                   <form class="sign-in" method="post" action="#">
                     <input type="email" name="user-email" placeholder="Электронная почта">
                     <input type="password" name="user-password" placeholder="Пароль">
-                    <button class="btn" type="submit">Войти</button>
+                    <div class="login-and-authorizes">
+                      <button class="btn" type="submit">Войти</button>
+                      <div class="authorize-links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
+                    </div>
+
                   </form>
-                  <div class="authorize-links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
+
                 </div>
               </li>
               <li class="basket full-basket">
@@ -125,25 +132,26 @@
             </div>
           </section>
           <section class="hits">
-            <article class="hit">
+            <article class="catalog-item">
               <img width="267" height="280" src="img/ice-cream-1.png" alt="фото товара">
-              <p class="price">310&#8381;/кг</p>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <span class="price">310&#8381;/кг</span>
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </article>
-            <article class="hit">
+
+            <article class="catalog-item">
               <img width="267" height="280" src="img/ice-cream-2.png" alt="фото товара">
               <p class="price">380&#8381;/кг</p>
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </article>
-            <article class="hit">
+            <article class="catalog-item">
               <img width="267" height="280" src="img/ice-cream-3.png" alt="фото товара">
               <p class="price">355&#8381;/кг</p>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </article>
-            <article class="hit">
+            <article class="catalog-item">
               <img width="267" height="280" src="img/ice-cream-4.png" alt="фото товара">
               <p class="price">415&#8381;/кг</p>
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </article>
           </section>
           <section class="features">
