@@ -525,7 +525,7 @@ li.full-basket > a {
   line-height: 60px;
   margin: 0 auto 30px auto;
 }
-.slide-radio {
+.slide-radio, .fat input[type=radio] {
   display: none;
 }
 .invitation ul {
@@ -850,7 +850,7 @@ li.full-basket > a {
   width: 32px;
   height: 32px;
   position: relative;
-  box-shadow: 0px 0px 0px 4px rgba(255,255,255, 0.502);
+  box-shadow: 0px 0px 0px 3px rgba(255,255,255, 0.502);
   border-radius: 50%;
   margin-right: 18px;
 }
@@ -946,15 +946,16 @@ fieldset {
   padding: 0;
   background: #a8b9af;
   border-radius: 18px;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 15px;
   position: relative;
 }
 .field {
   margin: 0;
   color: white;
+  margin-bottom: 9px;
 }
 .field p {
   font-size: 14px;
@@ -972,7 +973,7 @@ fieldset {
 }
 .filters {
   display: flex;
-  width: 860px;
+  width: 866px;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
@@ -981,11 +982,14 @@ fieldset {
 .filters button {
   width: 144px;
   border: 2px solid #f6f8f7;
-  border-radius: 15px;
+  border-radius: 18px;
   background: #a8b9af;
-  padding-top: 11px;
-  padding-bottom: 5px;
-  align-self: flex-end;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  align-self: center;
+  margin-top: 15px;
+  line-height: 18px;
 }
 .order {
   width: 193px;
@@ -1012,20 +1016,103 @@ fieldset {
   height: 5px;
   background-image: url(../img/select-marker.png);
   background-repeat: no-repeat;
- // background-position: 50% 50%;
+}
+.range-price {
+  min-width: 218px;
+  box-sizing: border-box;
+}
+.range-controls {
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 5px;
+}
+.range-controls .scale {
+  height: 4px;
+  background: rgba(248, 247, 244, 0.5);
+}
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+  background: rgb(248, 247, 244);
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: white;
+}
+.range-controls .toggle-min {
+  left: 19px;
+}
+.range-controls .toggle-max {
+  left: 117px;
+}
+.fat > label {
+  padding: 0;
+  padding-left: 30px;
+  position: relative;
+  margin-right: 19px;
+  line-height: 18px;
+}
+.fat > label:last-of-type {
+  margin: 0;
+}
+.fat > label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+.fatness[checked] { /* как по чекнутому элементу поменять псевдоэлемент у label?*/
+  background-color: white;
+}
+.toppings input {
+  display: none;
+}
+.toppings label {
+  padding: 0;
+  padding-left: 30px;
+  position: relative;
+  margin-right: 19px;
+  line-height: 18px;
+}
+.toppings > label:last-of-type {
+  margin: 0;
+}
+.toppings > label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px white;
 }
 /* каталог */
 .catalog {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
 .catalog-item {
   flex: 23.3%;
   text-align: center;
   position: relative;
-  z-index: 1;
-
   padding-top: 5px;
 }
 .catalog-item img, .hit img {
@@ -1042,21 +1129,19 @@ fieldset {
   font-weight: normal;
   display: none;
   left: 42px;
+  z-index: 1;
 }
 .catalog-item::before {
   content: "";
-  background: #b1c0b8;
+  background: rgba(255,255,255, 0.3);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  z-index: -1;
+  bottom: -66px;
+  z-index: 1;
   display: none;
   border-radius: 4px;
-}
-.catalog-item:hover {
-  padding-bottom: 66px;
 }
 .catalog-item:hover::before {
   display: block;
