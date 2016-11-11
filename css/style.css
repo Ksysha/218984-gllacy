@@ -41,7 +41,9 @@ h3 {
   font-weight: normal;
   text-decoration: underline;
 }
-
+.inner main {
+  position: relative;
+}
 .wrapper {
   background: #849d8f;
 }
@@ -433,7 +435,10 @@ li.full-basket > a {
   height: 15px;
   padding: 0;
   padding-left: 10px;
-  padding-right: 10px;
+  display: block;
+  text-indent: -99999px;
+  margin: 0;
+
 }
 .delete-product a::before {
   position: absolute;
@@ -815,17 +820,31 @@ li.full-basket > a {
   margin-top: 27px;
 }
 /* футер */
+.inner .main-footer {
+  margin-top: 50px;
+}
 .main-footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+.inner main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #a9bbb1;
 }
 .footer-social {
+  padding: 0;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 10px;
   margin-left: 3px;
   list-style-type: none;
   display: flex;
-  padding: 0;
+
 }
 .social-btn {
   width: 32px;
@@ -859,6 +878,37 @@ li.full-basket > a {
   list-style-type: none;
   column-count: 2;
   padding: 0;
+  margin: 0;
+}
+.footer-documents a {
+  color: white;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 25px;
+}
+.footer-documents li:first-child a{
+
+  position: relative;
+}
+.footer-documents li:first-child a::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  top: 1px;
+  left: 0px;
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-position: -5px -35px;
+ }
+.footer-copyright p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: white;
+}
+.footer-copyright a {
+  color: white;
 }
 /* хлебные крошки */
 .breadcrumbs h1 {
@@ -975,11 +1025,14 @@ fieldset {
   text-align: center;
   position: relative;
   z-index: 1;
+
+  padding-top: 5px;
 }
 .catalog-item img, .hit img {
   margin-bottom: -60px;
 }
 .catalog-item .btn {
+  position: absolute;
   font-size: 18px;
   line-height: 24px;
   padding-top: 10px;
@@ -987,36 +1040,78 @@ fieldset {
   width: 70.5%;
   border-radius: 16px;
   font-weight: normal;
+  display: none;
+  left: 42px;
 }
 .catalog-item::before {
-    content: "";
-    background: #b1c0b8;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    display: none;
+  content: "";
+  background: #b1c0b8;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: none;
+  border-radius: 4px;
 }
-.catalog-item:hover::before{ /* почему не срабатывает?(*/
+.catalog-item:hover {
+  padding-bottom: 66px;
+}
+.catalog-item:hover::before {
   display: block;
+}
+.catalog-item:hover .btn {
+  display: inline-block;
 }
 /* переключалка станиц */
 .n-page {
   padding: 0;
+  margin: 0;
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
   margin-top: 107px;
+  margin-bottom: 30px;
+}
+.n-page .page-prev {
+  text-indent: -9999px;
+  background-image: url(../img/arrow-l.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 5px;
+}
+.n-page .page-next {
+  text-indent: -9999px;
+  background-image: url(../img/arrow-r.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 5px;
 }
 .n-page li {
-  padding-right: 24px;
 }
 .n-page li:last-child {
   padding: 0;
 }
 .n-page a {
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  display: inline-block;
+  min-width: 26px;
+  height: 16px;
+  text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.n-page .current {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+}
+.n-page .disabled {
+     opacity: 0.3;
 }
