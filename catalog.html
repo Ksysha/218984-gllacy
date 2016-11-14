@@ -12,7 +12,7 @@
       <div class="main-page inner">
         <header class="main-header">
           <div class="main-menu">
-            <img class="header-logo" width="154" height="64" src="img/logo-gllacy.svg" alt="Glassy Shop">
+            <a href="index.html"><img class="header-logo" width="154" height="64" src="img/logo-gllacy.svg" alt="Glassy Shop"></a>
             <nav class="main-nav">
               <ul class="nav-list">
                 <li class="active">
@@ -64,12 +64,12 @@
                 </div>
               </li>
               <li class="basket full-basket">
-                <a href="#">2 товаров</a>
+                <a href="#">2 товара</a>
                 <div class="popup-basket">
                   <table class="product-list">
                     <tr class="product-item">
                       <td class="delete-product">
-                        <button type="button">Удалить</button>
+                        <a href="#" class="delete-btn">Удалить</a>
                       </td>
                       <td class="preview-item">
                         <img src="img/preview-item-1.png" alt="фото товара">
@@ -80,7 +80,7 @@
                     </tr>
                     <tr class="product-item">
                       <td class="delete-product">
-                        <button type="button">Удалить</button>
+                        <a href="#" class="delete-btn">Удалить</a>
                       </td>
                       <td class="preview-item">
                         <img src="img/preview-item-2.png" alt="фото товара">
@@ -144,16 +144,24 @@
               <p>Жирность:</p>
               <fieldset class="fat">
                 <label>
-                  <input type="radio" name="fatness" class="fatness" value="0">0%
+                  <input type="radio" name="fatness" class="fatness" value="0">
+                  <span class="indicator-radio"></span>
+                  0%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" class="fatness" value="10" checked>до 10%
+                  <input type="radio" name="fatness" class="fatness" value="10" checked>
+                  <span class="indicator-radio"></span>
+                  до 10%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" class="fatness" value="30">до 30%
+                  <input type="radio" name="fatness" class="fatness" value="30">
+                  <span class="indicator-radio"></span>
+                  до 30%
                 </label>
                 <label>
-                  <input type="radio" name="fatness" class="fatness" value="more30">выше 30%
+                  <input type="radio" name="fatness" class="fatness" value="more30">
+                  <span class="indicator-radio"></span>
+                  выше 30%
                 </label>
               </fieldset>
             </div>
@@ -161,19 +169,29 @@
               <p>Наполнители:</p>
               <fieldset class="toppings">
                 <label>
-                  <input type="checkbox" name="chocolate" value="chocolate">Шоколадные
+                  <input type="checkbox" name="chocolate" value="chocolate">
+                  <span class="indicator-checkbox"></span>
+                  Шоколадные
                 </label>
                 <label>
-                  <input type="checkbox" name="sugar-topping" value="sugar-topping" checked>Сахарные присыпки
+                  <input type="checkbox" name="sugar-topping" value="sugar-topping" checked>
+                  <span class="indicator-checkbox"></span>
+                  Сахарные присыпки
                 </label>
                 <label>
-                  <input type="checkbox" name="fruits" value="fruits">Фрукты
+                  <input type="checkbox" name="fruits" value="fruits">
+                  <span class="indicator-checkbox"></span>
+                  Фрукты
                 </label>
                 <label>
-                  <input type="checkbox" name="syrups" value="syrups">Сиропы
+                  <input type="checkbox" name="syrups" value="syrups">
+                  <span class="indicator-checkbox"></span>
+                  Сиропы
                 </label>
                 <label>
-                  <input type="checkbox" name="jam" value="jam" checked>Джемы
+                  <input type="checkbox" name="jam" value="jam" checked>
+                  <span class="indicator-checkbox"></span>
+                  Джемы
                 </label>
               </fieldset>
             </div>

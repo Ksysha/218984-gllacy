@@ -66,8 +66,8 @@
 
                 </div>
               </li>
-              <li class="basket full-basket">
-                <a href="#">2 товаров</a>
+              <li class="basket">
+                <a href="#">Пусто</a>
                 <div class="popup-basket">
                   <table class="product-list">
                     <tr class="product-item">
@@ -190,7 +190,7 @@
           </div>
           <div class="map-contacts">
             <div class="map">
-              <img width="1200" height="430" src="img/map.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <section class="contacts">
               <p>Адрес главного офиса и<br>
@@ -199,7 +199,7 @@
               <p>Для заказов по телефону:</p>
               <b>8 812 450-25-25</b>
               <p>(с 10 до 20 ежедневно)</p>
-              <a href="#" class="btn">Форма обратной связи</a>
+              <a href="#" class="btn feedback">Форма обратной связи</a>
             </section>
           </div>
         </main>
@@ -230,14 +230,77 @@
         <div class="popup-feedback">
           <form action="#" method="get">
             <b>Мы обязательно вам ответим!</b>
-            <a href="#" class="exit">Закрыть</a>
+            <button type="button" class="exit">Закрыть</button>
             <input type="text" name="feedback-name" placeholder="Как вас зовут?">
             <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
             <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
-            <button type="submit">Отправить</button>
+            <button class="btn btn-push" type="submit">Отправить</button>
           </form>
         </div>
+        <div class="overlay"></div>
       </div>
     </div>
+    <script type="text/javascript">
+      var link = document.querySelector(".feedback");
+      var popupFeedback = document.querySelector(".popup-feedback");
+      var close = popupFeedback.querySelector(".exit");
+      var overlay = document.querySelector(".overlay");
+      var nameFeedback = popupFeedback.querySelector("[name=feedback-name]");
+      var emailFeedback = popupFeedback.querySelector("[name=feedback-email]");
+      var message = popupFeedback.querySelector("[name=user-message]");
+      var form = popupFeedback.querySelector("form");
+      var storageEmail = localStorage.getItem("email");
+      var storageName = localStorage.getItem("name");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupFeedback.classList.add("popup-feedback-show");
+        overlay.style.display = "block";
+        if (storageName && storageEmail) {
+          nameFeedback.value = storageName;
+          emailFeedback.value = storageEmail;
+          message.focus();
+        } else {
+          if (storageName) {
+            nameFeedback.value = storageName;
+            emailFeedback.focus();
+          }
+           else {
+            emailFeedback.value = storageEmail;
+            nameFeedback.focus();
+          }
+        }
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupFeedback.classList.remove("popup-feedback-show");
+        overlay.style.display = "none";
+        popupFeedback.classList.remove("popup-feedback-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!nameFeedback.value || !emailFeedback.value || !message.value) {
+          event.preventDefault();
+          popupFeedback.classList.add("popup-feedback-error");
+          popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+        } else {
+          localStorage.setItem("email", emailFeedback.value);
+          localStorage.setItem("name", nameFeedback.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popupFeedback.classList.contains("popup-feedback-show")) {
+            popupFeedback.classList.remove("popup-feedback-show");
+            overlay.style.display = "none";
+            popupFeedback.classList.remove("popup-feedback-error");
+            popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>
