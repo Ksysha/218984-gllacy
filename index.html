@@ -113,7 +113,7 @@
               <a href="#" class="btn">Давайте оба!</a>
             </div>
             <ul>
-              <li><label class="current" for="background-1"></label></li>
+              <li><label for="background-1"></label></li>
               <li><label for="background-2"></label></li>
               <li><label for="background-3"></label></li>
             </ul>
@@ -231,8 +231,10 @@
           <form action="#" method="get">
             <b>Мы обязательно вам ответим!</b>
             <button type="button" class="exit">Закрыть</button>
-            <input type="text" name="feedback-name" placeholder="Как вас зовут?">
-            <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+            <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
+            <label for="feedback-name">Как вас зовут?</label>
+            <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+            <label for="feedback-email">Ваша почта для ответа?</label>
             <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
             <button class="btn btn-push" type="submit">Отправить</button>
           </form>
