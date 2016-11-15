@@ -99,18 +99,26 @@ h3 {
   display: flex;
   list-style-type: none;
   margin: 0;
-  margin-top: 21px;
+  margin-top: 17px;
+}
+.nav-list .active {
+  padding: 0;
 }
 .nav-list > .active > a {
   background-color: #d07058;
-  border-radius: 13px;
+  border-radius: 15px;
   box-sizing: border-box;
   padding-top: 7px;
   padding-bottom: 7px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border: none;
 }
 .nav-list > li {
   position: relative;
   padding-bottom: 10px;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 .nav-list > li:first-of-type {
   margin-left: 16px;
@@ -122,16 +130,23 @@ h3 {
   padding-right: 14px;
   padding-left: 14px;
   line-height: 18px;
-  text-decoration: underline;
-  top: -4px;
+}
+.nav-list > li > a {
+  padding: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  font-weight: 500;
+}
+.nav-list > li:hover {
+  padding: 0;
 }
 .nav-list > li:hover > a {
   background-color: #f7f6f3;
-  border-radius: 13px;
+  border-radius: 15px;
   box-sizing: border-box;
   padding-top: 7px;
   padding-bottom: 7px;
-  top: -4px;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 .nav-list > li:active > a{
   color: #333;
@@ -139,7 +154,8 @@ h3 {
   box-sizing: border-box;
   padding-top: 7px;
   padding-bottom: 7px;
-  top: -4px;
+  padding-right: 14px;
+  padding-left: 14px;
   background-color: rgba(248, 247, 244, 0.988);
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
@@ -152,8 +168,7 @@ h3 {
 .sub-nav-list {
   padding: 0;
   background: white;
-  top: 50%;
-  transform: translateY(6%);
+  top: 100%;
   left: -7px;
   border-radius: 5px;
   display: none;
@@ -210,7 +225,7 @@ h3 {
 }
 .user-list li {
   margin-left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .user-list li > a {
   text-decoration: none;
@@ -249,8 +264,7 @@ h3 {
 .search > .popup {
   width: 343px;
   right: 0;
-  top: 50%;
-  transform: translateY(14%);
+  top: 100%;
   position: absolute;
   background-color: #f8f7f4;
   padding: 20px 15px;
@@ -312,8 +326,7 @@ h3 {
 .popup-login {
   width: 277px;
   right: 0;
-  top: 50%;
-  transform: translateY(6%);
+  top: 100%;
   position: absolute;
   background-color: #f8f7f4;
   padding: 20px 15px;
@@ -403,8 +416,7 @@ li.full-basket > a {
   background-color: #f8f7f4;
   width: 540px;
   right: 0;
-  top: 50%;
-  transform: translateY(6%);
+  top:100%;
   position: absolute;
   padding: 20px 15px;
   border-radius: 6px;
@@ -505,6 +517,7 @@ li.full-basket > a {
   position: absolute;
   top: 100%;
   right: 0;
+  margin-top: 12px;
 }
 .header-contacts p {
   margin: 0;
@@ -639,6 +652,14 @@ li.full-basket > a {
   margin-bottom: 29px;
   align-items: stretch;
 }
+.hits article {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hits article > img {
+  width: 100%;
+  height: auto;
+}
 .price {
   line-height: 45px;
   font-size: 36px;
@@ -646,8 +667,8 @@ li.full-basket > a {
   margin: 0;
   font-weight: 500;
   margin-bottom: 27px;
-  margin-left: -105px;
-  display: inline-block;
+  display: block;
+  text-align: left;
   letter-spacing: 2px;
 }
 /* преимущества */
@@ -968,9 +989,14 @@ li.full-basket > a {
 .breadcrumbs a {
   color: white;
 }
+.breadcrumbs a[href] {
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  text-decoration: none;
+}
 .breadcrumbs a[href]:hover,
 .breadcrumbs a[href]:active {
-  color: #e84d37;
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158,0.4);
 }
 .breadcrumbs li::before {
   content: '»';
@@ -1156,14 +1182,14 @@ fieldset {
   height: 10px;
   border-radius: 50%;
 }
+.fat label:hover .indicator-radio {
+  box-shadow: inset 0px 0px 0px 2px white;
+}
 .fatness:disabled + .indicator-radio {
   box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.4);
 }
 .fatness:disabled + .indicator-radio::before {
   background: rgba(255,255,255,0.4);
-}
-.fat label:hover .indicator-radio {
-  box-shadow: inset 0px 0px 0px 2px white;
 }
 .toppings input {
   display: none;
@@ -1209,15 +1235,16 @@ fieldset {
   height: 2px;
   transform: rotate(45deg);
 }
+
+.toppings label:hover .indicator-checkbox {
+  box-shadow: inset 0px 0px 0px 2px white;
+}
 .topping:disabled + .indicator-checkbox {
   box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.4);
 }
 .topping:disabled + .indicator-checkbox::before,
 .topping:disabled + .indicator-checkbox::after {
   background: rgba(255,255,255,0.4);
-}
-.toppings label:hover .indicator-checkbox {
-  box-shadow: inset 0px 0px 0px 2px white;
 }
 /* каталог */
 .catalog {
@@ -1232,7 +1259,7 @@ fieldset {
   position: relative;
   padding-top: 5px;
 }
-.catalog-item img, .hit img {
+.catalog-item img {
   margin-bottom: -60px;
 }
 .catalog-item .btn {
