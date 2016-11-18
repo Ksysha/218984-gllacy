@@ -1,9 +1,3 @@
-/*@font-face{
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf') format('ttf'),
-       url('../fonts/Roboto-Bold.ttf') format('ttf'),
-       url('../fonts/Roboto-Medium.ttf') format('ttf');
-}*/
 body {
   font-size: 16px;
   line-height: 22px;
@@ -250,6 +244,7 @@ h3 {
   border-radius: 50%;
   background-color: rgba(255,255,255,0.2);
   display: inline-block;
+  text-indent: -999999px;
 }
 .search:hover > a {
   background-color: #f8f7f4;
@@ -311,7 +306,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: -217px -99px;
 }
-.login:hover > a{
+.login:hover > a {
   background-color: #f8f7f4;
   box-shadow: none;
   color: #373737;
@@ -1356,7 +1351,7 @@ fieldset {
   width: 478px;
   box-sizing: border-box;
   left: 50%;
-  margin-left: -239px;
+  transform: translateX(-50%);
   top: 30%;
   position: fixed;
   z-index: 20;
