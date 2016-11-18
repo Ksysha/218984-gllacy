@@ -40,7 +40,7 @@
           <div class="user-block">
             <ul class="user-list">
               <li class="search">
-                <a href="#">Поиск</a>
+                <a href="#"></a>
                 <div class="popup">
                   <form method="post" action="#">
                     <input type="text" name="search" placeholder="Что ищем?">
@@ -65,34 +65,36 @@
               <li class="basket">
                 <a href="#">Пусто</a>
                 <div class="popup-basket">
-                  <table class="product-list">
-                    <tr class="product-item">
-                      <td class="delete-product">
-                        <a href="#" class="delete-btn">Удалить</a>
-                      </td>
-                      <td class="preview-item">
-                        <img src="img/preview-item-1.png" alt="фото товара">
-                      </td>
-                      <td class="name-product">Пломбир с апельсиновым джемом</td>
-                      <td class="price-product">1,5 кг x <span>200 руб</span></td>
-                      <td class="cost">300 руб</td>
-                    </tr>
-                    <tr class="product-item">
-                      <td class="delete-product">
-                        <a href="#" class="delete-btn">Удалить</a>
-                      </td>
-                      <td class="preview-item">
-                        <img src="img/preview-item-2.png" alt="фото товара">
-                      </td>
-                      <td class="name-product">Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td class="price-product">1,5 кг x <span>300 руб</span></td>
-                      <td class="cost">400 руб</td>
-                    </tr>
-                  </table>
-                  <div class="total-buy">
-                    <b>Итого: 750 руб.</b>
-                    <a href="#" class="btn">Оформить заказ</a>
-                  </div>
+                  <form>
+                    <table class="product-list">
+                      <tr class="product-item">
+                        <td class="delete-product">
+                          <a href="#" class="delete-btn">Удалить</a>
+                        </td>
+                        <td class="preview-item">
+                          <img src="img/preview-item-1.png" alt="фото товара">
+                        </td>
+                        <td class="name-product">Пломбир с апельсиновым джемом</td>
+                        <td class="price-product">1,5 кг x <span>200 руб</span></td>
+                        <td class="cost">300 руб</td>
+                      </tr>
+                      <tr class="product-item">
+                        <td class="delete-product">
+                          <a href="#" class="delete-btn">Удалить</a>
+                        </td>
+                        <td class="preview-item">
+                          <img src="img/preview-item-2.png" alt="фото товара">
+                        </td>
+                        <td class="name-product">Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td class="price-product">1,5 кг x <span>300 руб</span></td>
+                        <td class="cost">400 руб</td>
+                      </tr>
+                    </table>
+                    <div class="total-buy">
+                      <b>Итого: 750 руб.</b>
+                      <submit type="submit" class="btn-basket">Оформить заказ</submit>
+                    </div>
+                  </form>
                 </div>
               </li>
             </ul>
@@ -202,10 +204,10 @@
         <footer class="main-footer">
           <section >
             <ul class="footer-social">
-              <li class="social-btn social-btn-twitter"><a  href="#"></a></li>
-              <li class="social-btn social-btn-inst"><a  href="#"></a></li>
-              <li class="social-btn social-btn-fb"><a  href="#"></a></li>
-              <li class="social-btn social-btn-vk"><a  href="#"></a></li>
+              <li class="social-btn social-btn-twitter"><a href="#">Твиттер</a></li>
+              <li class="social-btn social-btn-inst"><a href="#">Инстаграмм</a></li>
+              <li class="social-btn social-btn-fb"><a href="#">Фэйсбук</a></li>
+              <li class="social-btn social-btn-vk"><a href="#">Вконтакте</a></li>
             </ul>
           </section>
           <section >
@@ -223,21 +225,21 @@
             &#169; 2016</p>
           </section>
         </footer>
-        <div class="popup-feedback">
-          <form action="#" method="get">
+        <div class="popup-feedback-overlay">
+          <form action="#" method="get" class="popup-feedback">
             <b>Мы обязательно вам ответим!</b>
             <button type="button" class="exit">Закрыть</button>
             <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
-            <label for="feedback-name">Как вас зовут?</label>
+            <label class="popup-feedback-label" for="feedback-name">Как вас зовут?</label>
             <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
-            <label for="feedback-email">Ваша почта для ответа?</label>
+            <label class="popup-feedback-label" for="feedback-email">Ваша почта для ответа?</label>
             <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
             <button class="btn btn-push" type="submit">Отправить</button>
           </form>
         </div>
-        <div class="overlay"></div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
