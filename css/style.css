@@ -2,12 +2,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
-  font-family: "Roboto", "Arial";
+  font-family: "Roboto", "Arial", sans-serif;
   min-width: 900px;
 }
 h1 {
   font-weight: bold;
-  padding-bottom: 40px;
   margin: 0;
   color: white;
   font-size: 35px;
@@ -41,33 +40,33 @@ h3 {
 .wrapper {
   background: #849d8f;
 }
-#background-1:checked ~ .wrapper {
+.slide-radio:first-of-type:checked ~ .wrapper {
   background: #849d8f;
   background-image: url(../img/index-background1.png);
   background-position: top center;
   background-repeat: no-repeat;
 }
-#background-1:checked ~ .wrapper label[for=background-1] {
+.slide-radio:first-of-type:checked ~ .wrapper label[for=background-1] {
   box-shadow: inset 0px 0px 0px 2px white;
   background: white;
 }
-#background-2:checked ~ .wrapper {
+.slide-radio:nth-child(2):checked ~ .wrapper {
   background: #8996a6;
   background-image: url(../img/index-background2.png);
   background-position: top center;
   background-repeat: no-repeat;
 }
-#background-2:checked ~ .wrapper label[for=background-2] {
+.slide-radio:nth-child(2):checked ~ .wrapper label[for=background-2] {
   box-shadow: inset 0px 0px 0px 2px white;
   background: white;
 }
-#background-3:checked ~ .wrapper {
+.slide-radio:nth-child(3):checked ~ .wrapper {
   background: #9d8b84;
   background-image: url(../img/index-background3.png);
   background-position: top center;
   background-repeat: no-repeat;
 }
-#background-3:checked ~ .wrapper label[for=background-3] {
+.slide-radio:nth-child(3):checked ~ .wrapper label[for=background-3] {
   box-shadow: inset 0px 0px 0px 2px white;
   background: white;
 }
@@ -193,7 +192,6 @@ h3 {
   padding-bottom: 12px;
   font-size: 14px;
   line-height: 16px;
-  display: inline-block;
   width: 101px;
 }
 .sub-nav-list li:first-of-type {
@@ -216,6 +214,7 @@ h3 {
   list-style-type: none;
   margin: 0;
   margin-top: 12px;
+  padding: 0;
 }
 .user-list li {
   margin-left: 10px;
@@ -613,9 +612,11 @@ li.full-basket > a {
   border-radius: 12px;
 }
 .raspberries-free {
+  background-color: #b80432;
   background-image: url(../img/raspberry-background.png);
 }
 .chocolate-free {
+  background-color: #432617;
   background-image: url(../img/chocolate-background.png);
 }
 .banner p {
@@ -648,6 +649,17 @@ li.full-basket > a {
   padding-left: 10px;
   padding-right: 10px;
 }
+.hits article::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -181px -5px;
+}
 .hits article > img {
   width: 100%;
   height: auto;
@@ -665,6 +677,7 @@ li.full-basket > a {
 }
 /* преимущества */
 .features {
+  background-color: #f1e6d1;
   background-image: url(../img/wafer.jpg);
   border-radius: 13px;
   padding-top: 24px;
@@ -689,7 +702,7 @@ li.full-basket > a {
 .feature-item {
   background-position: center;
   background-size: cover;
-  width: 44.6%;
+  width: 48%;
   box-sizing: border-box;
   position: relative;
   padding-left: 55px;
@@ -744,10 +757,15 @@ li.full-basket > a {
   justify-content: space-between;
   margin-bottom: 35px;
 }
+.index-content-title {
+  color: #323232;
+  text-decoration: none;
+}
 .news {
   width: 49%;
   background-position: center;
   background-size: cover;
+  background-color: #ffffff;
   background-image: url(../img/strawberry-background.png);
   box-sizing: border-box;
   padding-top: 27px;
@@ -759,12 +777,13 @@ li.full-basket > a {
   width: 300px;
   font-size: 24px;
   line-height: 30px;
-  color: black;
+  color: #393939;
 }
 .subscriptions {
   width: 49%;
   background-position: center;
   background-size: cover;
+  background-color: #f8f7f4;
   background-image: url(../img/mail-border-background.png);
   box-sizing: border-box;
   padding: 6px;
@@ -793,7 +812,7 @@ li.full-basket > a {
   border: none;
 }
 .subscriptions input {
-  width: 71.8%; /* не могу посчитать... если уменьшат экран, то поле не пропорционально уменьшается*/
+  width: calc(100% - 139px);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -1129,7 +1148,6 @@ fieldset {
   position: relative;
   margin-right: 19px;
   line-height: 18px;
-  position: relative;
 }
 .fat > label:last-of-type {
   margin: 0;
@@ -1174,7 +1192,6 @@ fieldset {
   position: relative;
   margin-right: 19px;
   line-height: 18px;
-  position: relative;
 }
 .toppings > label:last-of-type {
   margin: 0;
@@ -1235,6 +1252,8 @@ fieldset {
 }
 .catalog-item img {
   margin-bottom: -60px;
+  width: 100%;
+  height: auto;
 }
 .catalog-item .btn {
   position: absolute;
@@ -1314,7 +1333,6 @@ fieldset {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  color: white;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -1462,30 +1480,29 @@ fieldset {
 }
 @keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    transform: translateX(-50%) translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    transform: translateX(-50%) translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    transform: translateX(-50%) translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 }
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    transform: translateX(-55%);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    transform: translateX(-45%);
   }
 }
-
 button {
   outline: none;
 }
