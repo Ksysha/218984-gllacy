@@ -55,8 +55,8 @@ feedbackForm.addEventListener("submit", function(event) {
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
-    if (popupFeedback.classList.contains("popup-feedback-show")) {
-      feedbackForm.classList.remove("popup-feedback-show", "popup-feedback-error");
+    if (feedbackForm.classList.contains("popup-show")) {
+      feedbackForm.classList.remove("popup-show", "popup-feedback-error");
       feedbackFormOverlay.classList.remove("popup-show");
       feedbackForm.offsetWidth = feedbackForm.offsetWidth;
     }
