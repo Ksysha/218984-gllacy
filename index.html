@@ -18,20 +18,20 @@
             <img class="header-logo" width="154" height="64" src="img/logo-gllacy.svg" alt="Glassy Shop">
             <nav class="main-nav">
               <ul class="nav-list">
-                <li>
+                <li class="nav-item">
                   <a href="#">Каталог</a>
                   <ul class="sub-nav-list">
-                    <li><a href="#s">Новинки</a></li>
-                    <li><a href="catalog.html">Сливочное</a></li>
-                    <li><a href="#s3">Щербеты</a></li>
-                    <li><a href="#s2">Фруктовый лед</a></li>
-                    <li><a href="#s3">Мелорин</a></li>
+                    <li class="sub-nav-item"><a href="#s">Новинки</a></li>
+                    <li class="sub-nav-item"><a href="catalog.html">Сливочное</a></li>
+                    <li class="sub-nav-item"><a href="#s3">Щербеты</a></li>
+                    <li class="sub-nav-item"><a href="#s2">Фруктовый лед</a></li>
+                    <li class="sub-nav-item"><a href="#s3">Мелорин</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="nav-item">
                   <a href="#">Доставка и оплата</a>
                 </li>
-                <li>
+                <li class="nav-item">
                   <a href="#">О Компании</a>
                 </li>
               </ul>
@@ -39,16 +39,16 @@
           </div>
           <div class="user-block">
             <ul class="user-list">
-              <li class="search">
+              <li class="search user-list-item">
                 <a href="#"></a>
-                <div class="popup">
+                <div class="popup-search">
                   <form method="post" action="#">
                     <input type="text" name="search" placeholder="Что ищем?">
                     <button type="submit">Найти</button>
                   </form>
                 </div>
               </li>
-              <li class="login">
+              <li class="login user-list-item">
                 <a href="https://www.google.ru/maps">Вход</a>
                 <form class="popup-login" method="post" action="#">
                   <input type="email" name="user-email" placeholder="Электронная почта">
@@ -62,7 +62,7 @@
                   </div>
                 </form>
               </li>
-              <li class="basket">
+              <li class="basket user-list-item">
                 <a href="#">Пусто</a>
                 <div class="popup-basket">
                   <form>
@@ -110,7 +110,7 @@
               <h1>Крем-брюле и пломбир с малиновым джемом</h1>
               <a href="#" class="btn">Давайте оба!</a>
             </div>
-            <ul>
+            <ul class="invitation-radio">
               <li><label for="background-1"></label></li>
               <li><label for="background-2"></label></li>
               <li><label for="background-3"></label></li>
@@ -179,7 +179,7 @@
               <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
             <div class="subscriptions">
-              <form action="#" method="post">
+              <form class="subscription-form" action="#" method="post">
                 <label for="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</label>
                 <input type="email" name="subscription" id="subscription" placeholder="Электронная почта">
                 <button type="submit" class="btn">Отправить</button>
@@ -212,10 +212,10 @@
           </section>
           <section >
             <ul class="footer-documents">
-              <li><a href="#">Для поставщиков</a></li>
-              <li><a href="#">Наши документы</a></li>
-              <li><a href="#">О производстве</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
+              <li class="document-item"><a href="#">Для поставщиков</a></li>
+              <li class="document-item"><a href="#">Наши документы</a></li>
+              <li class="document-item"><a href="#">О производстве</a></li>
+              <li class="document-item"><a href="#">Экологические стандарты</a></li>
             </ul>
           </section>
           <section class="footer-copyright">
@@ -229,9 +229,9 @@
           <form action="#" method="get" class="popup-feedback">
             <b>Мы обязательно вам ответим!</b>
             <button type="button" class="exit">Закрыть</button>
-            <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
+            <input class="feedback-name" type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
             <label class="popup-feedback-label" for="feedback-name">Как вас зовут?</label>
-            <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+            <input class="feedback-email" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
             <label class="popup-feedback-label" for="feedback-email">Ваша почта для ответа?</label>
             <textarea name="user-message" placeholder="Напишите что-нибудь..."></textarea>
             <button class="btn btn-push" type="submit">Отправить</button>
