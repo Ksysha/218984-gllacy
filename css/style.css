@@ -127,9 +127,9 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 {
     position: relative;
 
-    padding-right: 14px;
+    padding-right: 13px;
     padding-bottom: 10px;
-    padding-left: 14px;
+    padding-left: 13px;
 }
 .nav-item:first-of-type
 {
@@ -142,6 +142,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 
     position: relative;
 
+    margin-right: 2px;
     padding: 0;
 
     text-decoration: none;
@@ -157,23 +158,24 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 {
     box-sizing: border-box;
     padding-top: 7px;
-    padding-right: 14px;
+    padding-right: 13px;
     padding-bottom: 7px;
-    padding-left: 14px;
+    padding-left: 13px;
 
-    border-radius: 15px;
+    border-bottom: none;
+    border-radius: 17px;
     background-color: #f7f6f3;
 }
 .nav-item:active > a
 {
     box-sizing: border-box;
     padding-top: 7px;
-    padding-right: 14px;
+    padding-right: 13px;
     padding-bottom: 7px;
-    padding-left: 14px;
+    padding-left: 13px;
 
     color: #333;
-    border-radius: 13px;
+    border-radius: 17px;
     background-color: rgba(248, 247, 244, .988);
     box-shadow: inset 0 2px 1px 0 #696969;
 }
@@ -193,12 +195,12 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 {
     box-sizing: border-box;
     padding-top: 7px;
-    padding-right: 14px;
+    padding-right: 13px;
     padding-bottom: 7px;
-    padding-left: 14px;
+    padding-left: 13px;
 
     border: none;
-    border-radius: 15px;
+    border-radius: 17px;
     background-color: #d07058;
 }
 .sub-nav-list
@@ -1501,6 +1503,10 @@ fieldset
 
     -webkit-appearance: none;
 }
+.order select::-ms-expand
+{
+    display: none;
+}
 .order:hover select
 {
     color: black;
@@ -1549,6 +1555,10 @@ fieldset
 
     border-radius: 50%;
     background: white;
+}
+.range-controls .toggle:hover
+{
+    border: 1px solid white;
 }
 .range-controls .toggle-min
 {
@@ -1744,9 +1754,9 @@ fieldset
     position: absolute;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: -4.8%;
     bottom: -66px;
-    left: 0;
+    left: -4.8%;
 
     display: none;
 
