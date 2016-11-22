@@ -29,7 +29,7 @@ link.addEventListener("click", function(event) {
       nameFeedbackLabel.classList.add("change-label");
       emailFeedback.focus();
     }
-     else {
+     else if (storageEmail) {
       emailFeedback.value = storageEmail;
       emailFeedbackLabel.classList.add("change-label");
       nameFeedback.focus();
