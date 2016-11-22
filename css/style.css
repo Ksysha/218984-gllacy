@@ -1849,7 +1849,7 @@ fieldset
     font-size: 13px;
     line-height: 24px;
 
-    position: fixed;
+    position: absolute;
     z-index: 20;
     top: 50%;
     left: 50%;
@@ -2029,7 +2029,7 @@ fieldset
 {
     0%
     {
-        transform: translateX(-50%) translateY(-2000%);
+        transform: translateX(-50%) translateY(-100%);
     }
     70%
     {
