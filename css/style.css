@@ -199,6 +199,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     padding-bottom: 7px;
     padding-left: 13px;
 
+    color: white;
     border: none;
     border-radius: 17px;
     background-color: #d07058;
@@ -223,6 +224,10 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 .sub-nav-list > .active
 {
     background-color: #d07058;
+}
+.sub-nav-list > .active a
+{
+    color: white;
 }
 .sub-nav-item
 {
@@ -902,6 +907,7 @@ li.full-basket > a
     text-align: left;
 
     color: white;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, .5);
 }
 /* преимущества */
 .features
@@ -1043,11 +1049,10 @@ li.full-basket > a
     font-size: 24px;
     line-height: 30px;
 
-    display: inline-block;
-
-    width: 300px;
+    display: inline;
 
     color: #393939;
+    background: rgba(255,255,255,.5);
 }
 .subscriptions
 {
