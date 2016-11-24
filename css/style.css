@@ -55,6 +55,10 @@ h3
 {
     background: #849d8f;
 }
+.main-wrapper {
+    padding-right: 2.3%;
+    padding-left: 2.3%;
+}
 input[value='background-1']:checked ~ .wrapper
 {
     background: #849d8f;
@@ -96,8 +100,6 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
-    padding-right: 2.3%;
-    padding-left: 2.3%;
 }
 /* шапка */
 .header-logo
@@ -710,14 +712,16 @@ li.full-basket > a
     top: 100%;
     right: 0;
 
-    margin-top: 5px;
+    margin-top: 12px;
 
     text-align: right;
 }
 .header-contacts p
 {
     margin: 0;
-
+    font-size: 14px;
+    line-height: 16px;
+        margin-bottom: 5px;
     color: white;
 }
 .header-contacts a
@@ -786,7 +790,7 @@ li.full-basket > a
     height: 20px;
 
     cursor: pointer;
-    vertical-align: middle;
+    vertical-align: top;
 
     border-radius: 50%;
     box-shadow: inset 0 0 0 2px white;
@@ -898,6 +902,7 @@ li.full-basket > a
 /* хиты */
 .hits
 {
+  margin-bottom: 10px;
     display: flex;
 
     justify-content: space-between;
@@ -927,7 +932,7 @@ li.full-basket > a
     display: block;
 
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 
     text-align: left;
 
@@ -937,10 +942,10 @@ li.full-basket > a
 /* преимущества */
 .features
 {
-    margin-bottom: 37px;
-    padding-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 26px;
     padding-right: 16px;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
     padding-left: 16px;
 
     border-radius: 13px;
@@ -1046,7 +1051,7 @@ li.full-basket > a
 {
     display: flex;
 
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 
     justify-content: space-between;
 }
@@ -1060,8 +1065,8 @@ li.full-basket > a
 {
     box-sizing: border-box;
     width: 49%;
-    padding-top: 23px;
-    padding-left: 17px;
+    padding-top: 22px;
+    padding-left: 19px;
 
     border-radius: 14px;
     background-color: #fff;
@@ -1218,7 +1223,7 @@ li.full-basket > a
 
     display: flex;
 
-    margin-top: 25px;
+    margin-top: 12px;
     padding-bottom: 20px;
 
     justify-content: space-between;
@@ -1352,6 +1357,10 @@ li.full-basket > a
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     background-position: -5px -35px;
+}
+.footer-copyright {
+  margin-right: -5px;
+  margin-left: 10px;
 }
 .footer-copyright p
 {
@@ -1834,7 +1843,7 @@ fieldset
     display: flex;
 
     margin: 0;
-    margin-top: 45px;
+    margin-top: 57px;
     margin-bottom: 30px;
     padding: 0;
 
@@ -1844,7 +1853,7 @@ fieldset
 }
 .n-page .page-prev
 {
-    margin-right: 5px;
+   margin-right: 5px;
 
     text-indent: -9999px;
 
@@ -1860,7 +1869,7 @@ fieldset
 
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAdklEQVQokX3PsQ2AMAxE0YOCjp42EsuwAi0F67AGezAAI8AOFHSfgkSKkjiWLF3xbMsCBKyA8zlrATN/XRYU0ANHDYZQhfGECdP7RVj6JoY34Frl9Ug6fR4kjemWBtj8lheY0nNFECMTBFQFAS01EFAH7BYA9AEqcn+KAVfNHgAAAABJRU5ErkJggg==');
     background-repeat: no-repeat;
-    background-position: 10px 6px;
+    background-position: 18px 6px;
 }
 .n-page li:hover a:not(.current):not(.disabled)
 {
@@ -1878,6 +1887,7 @@ fieldset
 
     display: inline-block;
 
+    margin-left: 3px;
     min-width: 26px;
     height: 16px;
     padding-top: 5px;
