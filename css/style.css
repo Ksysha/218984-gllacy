@@ -42,11 +42,11 @@ h3
 
     margin: 0;
     margin-bottom: 6px;
+    padding: 0 6px;
 
     text-decoration: underline;
 
     color: white;
-    padding: 0 6px;
 }
 .inner main
 {
@@ -56,7 +56,8 @@ h3
 {
     background: #849d8f;
 }
-.main-wrapper {
+.main-wrapper
+{
     padding-right: 2.3%;
     padding-left: 2.3%;
 }
@@ -539,7 +540,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    background-position: 4px 0px;
+    background-position: 4px 0;
 }
 .full-basket > a
 {
@@ -573,14 +574,14 @@ li.full-basket > a
     right: 0;
 
     width: 540px;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-left: 6px;
 
     border-radius: 6px;
     background-color: #f8f7f4;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
-    padding-left: 6px;
-    padding-top: 4px;
-    padding-right: 12px;
-    padding-bottom: 9px;
 }
 .product-list
 {
@@ -588,8 +589,9 @@ li.full-basket > a
 
     border-spacing: 1px 13px;
 }
-.product-item {
-  margin-bottom: 15px;
+.product-item
+{
+    margin-bottom: 15px;
 }
 .product-list td
 {
@@ -597,25 +599,30 @@ li.full-basket > a
 }
 .product-list::after
 {
- position: absolute;
+    position: absolute;
+
     width: 510px;
     height: 1px;
     margin-top: 2px;
-    content: '';
-    border-bottom: 1px solid #d1d0ce;
     margin-left: 9px;
+
+    content: '';
+
+    border-bottom: 1px solid #d1d0ce;
 }
-.cost {
-      padding-right: 7px;
+.cost
+{
+    padding-right: 7px;
 }
 .name-product
 {
     width: 218px;
-    padding-right: 26px;
     padding-top: 10px;
+    padding-right: 26px;
 }
-.product-item:first-of-type .name-product {
-  padding-top: 0;
+.product-item:first-of-type .name-product
+{
+    padding-top: 0;
 }
 .name-product,
 .price-product,
@@ -682,18 +689,22 @@ li.full-basket > a
 {
     color: #e84d37;
 }
-.kilo {
-  padding: 0;
-  margin: 0;
-      font-size: 29px;
+.kilo
+{
+    font-size: 29px;
+
+    margin: 0;
     margin-left: -7px;
+    padding: 0;
 }
 .total-buy b
 {
     display: block;
-    letter-spacing: -0.5px;
-    margin-bottom: 12px;
+
     margin-top: 3px;
+    margin-bottom: 12px;
+
+    letter-spacing: -.5px;
 }
 .total-buy
 {
@@ -706,8 +717,8 @@ li.full-basket > a
     font-size: 18px;
     line-height: 24px;
 
-    padding: 10px 15px;
     margin-right: 1px;
+    padding: 10px 15px;
 
     color: white;
     border: none;
@@ -730,9 +741,10 @@ li.full-basket > a
 .header-contacts
 {
     position: absolute;
+    z-index: 1;
     top: 100%;
     right: 0;
-    z-index: 1;
+
     margin-top: 14px;
     margin-right: -1px;
 
@@ -740,12 +752,15 @@ li.full-basket > a
 }
 .header-contacts p
 {
-    margin: 0;
     font-size: 14px;
     line-height: 16px;
-        margin-bottom: 5px;
+
+    margin: 0;
+    margin-bottom: 5px;
+
+    letter-spacing: .3px;
+
     color: white;
-    letter-spacing: 0.3px;
 }
 .header-contacts a
 {
@@ -756,7 +771,8 @@ li.full-basket > a
     padding: 0;
 
     text-decoration: none;
-        letter-spacing: 0.4px;
+    letter-spacing: .4px;
+
     color: white;
 }
 .header-contacts a:hover,
@@ -797,9 +813,9 @@ li.full-basket > a
 
     display: flex;
 
-    padding: 0;
     margin: 0;
     margin-bottom: 20px;
+    padding: 0;
 
     list-style-type: none;
 }
@@ -927,8 +943,9 @@ li.full-basket > a
 /* хиты */
 .hits
 {
-  margin-bottom: 6px;
     display: flex;
+
+    margin-bottom: 6px;
 
     justify-content: space-between;
     align-items: stretch;
@@ -958,7 +975,7 @@ li.full-basket > a
 
     margin: 0;
     margin-bottom: 20px;
-        margin-left: 1px;
+    margin-left: 1px;
 
     text-align: left;
 
@@ -982,7 +999,8 @@ li.full-basket > a
 {
     font-size: 24px;
     line-height: 30px;
-    letter-spacing: 0.2px;
+
+    letter-spacing: .2px;
 }
 .features-list
 {
@@ -1084,8 +1102,10 @@ li.full-basket > a
 }
 .index-content-title
 {
-    text-decoration: none;
     padding-left: 0;
+
+    text-decoration: none;
+
     color: #323232;
 }
 .news
@@ -1108,9 +1128,10 @@ li.full-basket > a
 
     display: inline;
 
+    letter-spacing: .3px;
+
     color: #393939;
     background: rgba(255,255,255,.5);
-    letter-spacing: 0.3px;
 }
 .subscriptions
 {
@@ -1150,9 +1171,9 @@ li.full-basket > a
     line-height: 24px;
 
     width: 129px;
+    margin-top: -5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: -5px;
 
     border: none;
     border-radius: 21px;
@@ -1164,6 +1185,7 @@ li.full-basket > a
 
     box-sizing: border-box;
     width: calc(100% - 139px);
+    margin-top: 3px;
     margin-right: 6px;
     padding-top: 12px;
     padding-right: 0;
@@ -1172,20 +1194,19 @@ li.full-basket > a
 
     border: 1px solid #d3d3d2;
     border-radius: 4px;
-    margin-top: 3px;
 }
 /* карта и котакты*/
 .map
 {
     overflow: hidden;
 
+    height: 430px;
     margin-right: -2.3%;
     margin-left: -2.3%;
 
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 430px;
 }
 .contacts
 {
@@ -1206,24 +1227,28 @@ li.full-basket > a
 .map-contacts
 {
     position: relative;
+
     margin-bottom: 18px;
 }
 .contacts p
 {
     font-size: 14px;
     line-height: 20px;
+
     margin: 0;
 }
 .contacts b
 {
-  display: inline-block;
     font-size: 18px;
     line-height: 24px;
+
+    display: inline-block;
+
     margin: 3px 0;
 }
 .contacts .address
 {
-  margin: 0 0 20px;
+    margin: 0 0 20px;
 }
 .contacts .btn
 {
@@ -1342,16 +1367,19 @@ li.full-basket > a
     border-radius: 50%;
     box-shadow: inset 0 2px 1px 0 rgba(0,0,0,.4);
 }
-.footer-documents {
-  margin-top: 12px;
-    margin-left: -32px;
+.footer-documents
+{
     display: flex;
+
+    margin-top: 12px;
+    margin-left: -32px;
 }
 .footer-document
 {
     margin: 0;
-    padding: 0;
     margin-left: 7px;
+    padding: 0;
+
     list-style-type: none;
 }
 .footer-document a
@@ -1375,7 +1403,7 @@ li.full-basket > a
 .footer-document:first-child .document-item:first-child a::before
 {
     position: absolute;
-        top: 2px;
+    top: 2px;
     left: 3px;
 
     width: 15px;
@@ -1387,9 +1415,11 @@ li.full-basket > a
     background-repeat: no-repeat;
     background-position: -5px -35px;
 }
-.footer-copyright {
-  letter-spacing: -0.2px;
-  margin-left: 10px;
+.footer-copyright
+{
+    margin-left: 10px;
+
+    letter-spacing: -.2px;
 }
 .footer-copyright p
 {
@@ -1501,11 +1531,13 @@ fieldset
 
     color: white;
 }
-.toppings {
-  padding-top: 6px;
+.toppings
+{
+    padding-top: 6px;
 }
 .toppings label
-{    padding-right: 17px;
+{
+    padding-right: 17px;
     padding-left: 33px;
 }
 .toppings input[type=checkbox]
@@ -1656,13 +1688,14 @@ fieldset
 }
 .fat > label
 {
-        line-height: 18px;
+    line-height: 18px;
+
     position: relative;
+
     padding: 0;
     padding-right: 23px;
-    padding-left: 26px;
     padding-right: 20px;
-
+    padding-left: 26px;
 }
 .fat > label:last-of-type
 {
@@ -1722,7 +1755,7 @@ fieldset
     position: relative;
 
     padding: 0;
-        padding-right: 17px;
+    padding-right: 17px;
     padding-left: 33px;
 }
 .toppings > label:last-of-type
@@ -1822,16 +1855,20 @@ fieldset
     font-size: 18px;
     font-weight: normal;
     line-height: 24px;
+
     position: absolute;
     z-index: 1;
     left: 35px;
+
     display: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 17px;
+
     margin-top: 3px;
-    padding-left: 16px;
+    padding-top: 10px;
     padding-right: 18px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+
+    border-radius: 17px;
 }
 .catalog-item::before
 {
@@ -1883,12 +1920,11 @@ fieldset
 }
 .n-page .page-prev
 {
-
     text-indent: -9999px;
 
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAfElEQVQokYXRsQ3CQAxG4SeULgOkoDzRZB2qtNkFNmGPUDIHE1DQ0DyK3EknLiaWXFj69Eu2UQk6qbNKx3YlYAGOwCtKeLrWXe13gcouqFEICjr9AyoHYASGvNUDeDe7Zn1WPznt8ptUDzW8RiiEW8dsYPS3Gk4RKvCmdl9NvWREobQpUQAAAABJRU5ErkJggg==');
     background-repeat: no-repeat;
-    background-position: 0px 5px;
+    background-position: 0 5px;
 }
 .n-page .page-next
 {
@@ -1911,17 +1947,21 @@ fieldset
 }
 .n-page a
 {
-font-size: 16px;
+    font-size: 16px;
     line-height: 18px;
+
     display: inline-block;
+
+    margin-right: 1px;
+    margin-left: 0;
+    padding: 4px 9px;
+
     text-align: center;
     vertical-align: middle;
     vertical-align: middle;
     text-decoration: none;
+
     color: white;
-    padding: 4px 9px;
-    margin-right: 1px;
-    margin-left: 0px;
 }
 .n-page .current
 {
@@ -1947,8 +1987,8 @@ font-size: 16px;
 
     box-sizing: border-box;
     width: 478px;
-    padding-top: 15px;
-    padding-right: 15px;
+    padding-top: 12px;
+    padding-right: 24px;
     padding-bottom: 27px;
     padding-left: 25px;
 
@@ -1987,7 +2027,8 @@ font-size: 16px;
 
     display: inline-block;
 
-    margin-bottom: 25px;
+    margin-top: 3px;
+    margin-bottom: 16px;
 
     vertical-align: middle;
 }
@@ -2002,7 +2043,7 @@ font-size: 16px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 14px;
 
     border: 1px solid #d3d3d2;
     border-radius: 5px;
@@ -2046,7 +2087,7 @@ font-size: 16px;
     width: 428px;
     height: 155px;
     margin-bottom: 25px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-left: 15px;
 
     resize: none;
@@ -2061,20 +2102,24 @@ font-size: 16px;
 
     float: right;
 
+    margin-top: -10px;
+    margin-right: -2px;
     padding-top: 10px;
     padding-right: 24px;
     padding-bottom: 10px;
     padding-left: 24px;
 
     border: none;
-    border-radius: 15px;
+    border-radius: 21px;
 }
 .popup-feedback .exit
 {
-    position: absolute;
+    font-size: 0;
 
-  top: 20px;
-  right: 16px;
+    position: absolute;
+    top: 13px;
+    right: 16px;
+
     width: 18px;
     height: 18px;
     margin: 0;
@@ -2084,14 +2129,14 @@ font-size: 16px;
     vertical-align: middle;
     text-decoration: none;
     text-indent: -99999px;
-    font-size: 0;
+
     border: none;
     background: none;
 }
 .popup-feedback .exit::before
 {
     position: absolute;
-    left: 0px;
+    left: 0;
 
     width: 22px;
     height: 2px;
