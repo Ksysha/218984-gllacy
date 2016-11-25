@@ -445,7 +445,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     line-height: 24px;
 
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: 100%;
     right: 0;
 
@@ -568,7 +568,7 @@ li.full-basket > a
 .popup-basket
 {
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: 100%;
     right: 0;
 
@@ -732,7 +732,7 @@ li.full-basket > a
     position: absolute;
     top: 100%;
     right: 0;
-
+    z-index: 1;
     margin-top: 14px;
     margin-right: -1px;
 
@@ -1185,6 +1185,7 @@ li.full-basket > a
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    height: 430px;
 }
 .contacts
 {
@@ -1192,10 +1193,10 @@ li.full-basket > a
     top: 50%;
     right: 0;
 
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 25px;
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 25px;
 
     transform: translateY(-50%);
 
@@ -1205,27 +1206,24 @@ li.full-basket > a
 .map-contacts
 {
     position: relative;
+    margin-bottom: 18px;
 }
 .contacts p
 {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    margin-bottom: 4px;
-    margin-top: -3px;
 }
 .contacts b
 {
+  display: inline-block;
     font-size: 18px;
     line-height: 24px;
+    margin: 3px 0;
 }
 .contacts .address
 {
-    display: inline-block;
-
-    margin-bottom: 20px;
-    margin-top: -5px;
-    vertical-align: middle;
+  margin: 0 0 20px;
 }
 .contacts .btn
 {
@@ -1502,6 +1500,9 @@ fieldset
     margin-left: 16px;
 
     color: white;
+}
+.toppings {
+  padding-top: 6px;
 }
 .toppings label
 {    padding-right: 17px;
@@ -1821,26 +1822,24 @@ fieldset
     font-size: 18px;
     font-weight: normal;
     line-height: 24px;
-
     position: absolute;
     z-index: 1;
-    left: 42px;
-
+    left: 35px;
     display: none;
-
-    width: 70.5%;
     padding-top: 10px;
     padding-bottom: 10px;
-
-    border-radius: 16px;
+    border-radius: 17px;
+    margin-top: 3px;
+    padding-left: 16px;
+    padding-right: 18px;
 }
 .catalog-item::before
 {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -1px;
     right: -4.8%;
-    bottom: -66px;
+    bottom: -70px;
     left: -4.8%;
 
     display: none;
