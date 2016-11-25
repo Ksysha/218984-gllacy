@@ -2071,30 +2071,29 @@ font-size: 16px;
 }
 .popup-feedback .exit
 {
-    position: relative;
+    position: absolute;
 
-    display: inline-block;
-
-    width: 17px;
-    height: 28px;
+  top: 20px;
+  right: 16px;
+    width: 18px;
+    height: 18px;
     margin: 0;
-    margin-left: 59px;
     padding: 0;
 
     cursor: pointer;
     vertical-align: middle;
     text-decoration: none;
     text-indent: -99999px;
-
+    font-size: 0;
     border: none;
     background: none;
 }
 .popup-feedback .exit::before
 {
     position: absolute;
-    left: 1px;
+    left: 0px;
 
-    width: 15px;
+    width: 22px;
     height: 2px;
     padding: 0;
 
@@ -2108,7 +2107,7 @@ font-size: 16px;
     position: absolute;
     left: 0;
 
-    width: 15px;
+    width: 22px;
     height: 2px;
     padding: 0;
 
