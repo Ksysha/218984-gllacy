@@ -100,7 +100,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 .main-page
 {
     box-sizing: border-box;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 /* шапка */
@@ -164,7 +164,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     box-sizing: border-box;
     padding-top: 7px;
     padding-right: 13px;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     padding-left: 13px;
 
     border-bottom: none;
@@ -213,8 +213,8 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 {
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: -7px;
+    top: 98%;
+    left: -8px;
 
     display: none;
 
@@ -226,6 +226,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     border-radius: 5px;
     background: white;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+        padding-bottom: 6px;
 }
 .sub-nav-list > .active
 {
@@ -238,8 +239,9 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 .sub-nav-item
 {
     box-sizing: border-box;
-    padding-right: 25px;
-    padding-left: 15px;
+    padding-right: 17px;
+    padding-left: 19px;
+    padding-bottom: 0px;
 }
 .sub-nav-item:hover:not(.active)
 {
@@ -255,17 +257,13 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 }
 .sub-nav-list a
 {
-    font-size: 14px;
+  font-size: 14px;
     line-height: 16px;
-
     display: inline-block;
-
-    width: 101px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
+    width: 105px;
+    padding-top: 10px;
+    padding-bottom: 6px;
     vertical-align: middle;
-
     border: none;
 }
 .sub-nav-item:first-of-type
@@ -275,6 +273,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 .sub-nav-item:first-of-type a
 {
     font-weight: bold;
+        margin-bottom: 5px;
 }
 .sub-nav-item:first-of-type:hover
 {
@@ -292,7 +291,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     bottom: 0;
     left: 5px;
 
-    width: 132px;
+    width: 130px;
     height: 1px;
 
     content: '';
@@ -398,7 +397,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 
     box-sizing: border-box;
     padding: 0;
-    padding-top: 7px;
+    padding-top: 6px;
     padding-right: 16px;
     padding-bottom: 9px;
     padding-left: 44px;
@@ -427,14 +426,14 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 }
 .login:hover > a
 {
-    color: #373737;
+    color: #e4e3e0;
     background-color: #f8f7f4;
     box-shadow: none;
 }
 .login:hover > a::before
 {
     background-image: url(../img/sprite.png);
-    background-position: -216px -70px;
+    background-position: -219px -70px;
 }
 .login:hover > .popup-login
 {
@@ -448,10 +447,11 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     position: absolute;
     z-index: 20;
     top: 100%;
-    right: 0;
+    right: -2px;
 
-    width: 277px;
-    padding: 20px 15px;
+    width: 247px;
+    padding: 19px 15px;
+    padding-bottom: 23px;
 
     border-radius: 6px;
     background-color: #f8f7f4;
@@ -462,11 +462,11 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     font-size: 14px;
     line-height: 24px;
 
-    display: inline-grid;
+    display: inline-block;
 
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -478,27 +478,28 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
 }
 .popup-login button
 {
-    font-size: 18px;
+       font-size: 18px;
     line-height: 24px;
-
     width: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    padding-top: 6px;
+    padding-bottom: 6px;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
+        margin-top: 1px;
 }
 .login-and-authorizes
 {
     display: flex;
-
+    margin-left: 4px;
+    margin-right: 4px;
     justify-content: space-between;
 }
 .authorize-links a
 {
     display: block;
-
+    margin: 0;
     padding: 0;
+    margin-bottom: -2px;
 
     color: #323232;
 }
@@ -1243,6 +1244,7 @@ li.full-basket > a
     line-height: 24px;
 
     display: inline-block;
+    vertical-align: top;
 
     margin: 3px 0;
 }
@@ -1957,7 +1959,6 @@ fieldset
     padding: 4px 9px;
 
     text-align: center;
-    vertical-align: middle;
     vertical-align: middle;
     text-decoration: none;
 
