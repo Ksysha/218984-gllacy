@@ -165,7 +165,7 @@ input[value='background-3']:checked ~ .wrapper label[for=background-3]
     padding-top: 7px;
     padding-right: 13px;
     padding-bottom: 7px;
-    padding-left: 13px;
+    padding-left: 14px;
 
     border-bottom: none;
     border-radius: 17px;
